@@ -16,17 +16,35 @@ CashAI 是一个基于Python的自动化交易机器人项目，它能够连接�
 - requests
 - threading
 
-## 安装
+## 安装说明
 
-```bash
-pip install -r requirements.txt
-```
+1. 克隆仓库:
+   ```
+   git clone https://github.com/FUOQL/clash.git
+   ```
+2. 进入项目目录:
+   ```
+   cd clash
+   ```
+3. 安装依赖:
+   ```
+   pip install -r requirements.txt
+   ```
 
 ## 使用方法
 
-1. 配置API密钥
-2. 运行程序: `python CashAI.py`
-3. 通过Web API控制机器人
+1. 运行演示程序:
+   ```
+   python demo.py
+   ```
+2. 运行测试:
+   ```
+   python -m unittest test_cashai.py
+   ```
+3. 验证项目:
+   ```
+   python verify_project.py
+   ```
 
 ## API接口
 
@@ -35,16 +53,26 @@ pip install -r requirements.txt
 - `POST /start` - 启动交易机器人
 - `POST /stop` - 停止交易机器人
 
-## 文件说明
+## 项目结构
 
 - `CashAI.py`: 核心实现文件
 - `requirements.txt`: 依赖列表
+- `README.md`: 项目说明文档
 - `USAGE.md`: 使用指南
+- `FINAL_SUMMARY.md`: 项目总结
 - `demo.py`: 演示程序
 - `test_cashai.py`: 测试文件
+- `verify_project.py`: 项目验证脚本
+- `.gitignore`: Git忽略文件配置
 
 ## 注意事项
 
 - 当前实现使用随机策略，仅用于演示目的
 - 在生产环境中需要实现更复杂的交易策略
 - 需要配置有效的API密钥才能连接到真实交易所
+- 请确保已安装Python 3.8或更高版本
+- 本系统仅供学习和研究使用，不构成任何投资建议
+
+## 许可证
+
+本项目采用MIT许可证，详情请见[LICENSE](LICENSE)文件。
